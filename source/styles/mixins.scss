@@ -1,0 +1,10 @@
+@mixin wrapper {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 8px;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 20px;
+    }
+}

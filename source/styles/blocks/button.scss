@@ -1,0 +1,52 @@
+.button {
+    padding: 11px 16px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: $dark;
+
+    border: 1px solid $gray-border;
+    border-radius: 20px;
+    background-color: $light;
+    cursor: pointer;
+
+    transition-duration: $transition-duration;
+
+    &:active {
+        opacity: 0.6;
+
+        transition-duration: 0s;
+    }
+
+    &--regular {
+
+        &:hover {
+            color: $light;
+
+            border-color: $dark;
+            background-color: $dark;
+        }
+    }
+
+    &--primary {
+        color: $light;
+
+        border-color: $primary-additional;
+        background-color: $primary;
+
+        &:hover {
+            color: $primary;
+
+            background-color: $light;
+        }
+    }
+}
+
+@media (max-width: $fablet-width) {
+
+    .button {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,20 @@
+// Переменные с цветами
+$dark: #1C1E20; // Главный тёмный цвет
+
+$gray: #818181; // Главный серый цвет
+$gray-border: #C7C7C7; // Серый цвет границ
+$gray-background: #FAFAFA; // Серый цвет фона страницы
+
+$light: #FFFFFF; // Главный светлый цвет
+
+$primary: #4D1BC1; // Основной цвет для текста
+$primary-additional: #4A1ABB; // Основной цвет для декоративных элементов
+
+// Переменные брейкпоинтов
+$fablet-width: 480px;
+$tablet-width: 768px;
+$laptop-width: 980px;
+$desktop-width: 1280px;
+
+// Переменная длительности анимаций
+$transition-duration: 0.2s;

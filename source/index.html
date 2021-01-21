@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Light test</title>
+
+    <link rel="stylesheet" href="styles/style.min.css">
+</head>
+<body>
+    <header class="page-header" id="page-header">
+        <div class="page-header__wrapper">
+            <p class="page-header__logo">lite.page</p>
+
+            <nav class="main-nav" id="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">CRM</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Мои сайты</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Каталог</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Тарифы</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Блог</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link">Помощь</a></li>
+                </ul>
+            </nav>
+
+            <button class="page-header__button" id="mobile-nav-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <div class="page-main__wrapper">
+            <header class="page-main__header">
+                <div class="page-main__back">
+                    <button class="page-main__back-button" type="button" aria-label="Назад"></button>
+                    <span class="page-main__back-text">Назад</span>
+                </div>
+
+                <ul class="breadcrumbs page-main__header-breadcrumbs">
+                    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+                    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Настройки сайта</a></li>
+                    <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Доступ к сайту</a></li>
+                </ul>
+
+                <h1 class="page-main__title">Доступ к сайту</h1>
+            </header>
+
+            <section class="side-nav page-main__side-nav">
+                <div class="side-nav__wrapper">
+                    <ul class="side-nav__list">
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item side-nav__item--active"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                        <li class="side-nav__item"><a class="side-nav__link" href="#">Доступ к сайту</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="settings page-main__settings">
+                <header class="settings__header">
+                    <h2 class="settings__title">Настройка доступа к сайту</h2>
+                    <h3 class="settings__subtitle">Контролируйте, кому доступен ваш сайт</h3>
+                </header>
+
+                <p class="settings__object">Интернет-сайт</p>
+
+                <form class="form settings__form">
+                    <div class="form__wrapper">
+                        <input class="form__radio" id="public-status" type="radio" name="access-status" value="public">
+                        <label class="form__label" for="public-status">Опубликовать сайт</label>
+                        <p class="form__description">Доступно при оплаченном тарифном плане и купленном домене</p>
+                    </div>
+                    <div class="form__wrapper">
+                        <input class="form__radio" id="password-status" type="radio" name="access-status" value="password">
+                        <label class="form__label" for="password-status">Сайт защищен паролем</label>
+                        <p class="form__description">Сайт увидит только тот, у кого есть пароль</p>
+                    </div>
+                    <div class="form__wrapper">
+                        <input class="form__radio" id="private-status" type="radio" name="access-status" value="private" checked>
+                        <label class="form__label" for="private-status">Приватный сайт</label>
+                        <p class="form__description">Только авторы и владелец сайта смогут увидеть сайт</p>
+                    </div>
+
+                    <div class="form__buttons">
+                        <button class="button button--regular form__button" type="reset">Отменить</button>
+                        <button class="button button--primary form__button" id="settings-button" type="submit">Сохранить</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <div class="toast" id="settings-toast">
+        <p class="toast__text">Настройки доступа к сайту успешно применены</p>
+        <button class="toast__close" type="button" aria-label="Закрыть оповещение"></button>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
